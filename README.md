@@ -1,7 +1,7 @@
 ## Description
  A visualization of the worlds carbon emission.
 
- [Live Project]("https://kamsiy.github.io/carbon-emissions")
+ [Live Project](https://kamsiy.github.io/carbon-emissions)
 
 
 ## Datasets
