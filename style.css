@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900");
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  font-family: "Source Sans Pro";
+  background: #f9f9f9;
+  text-rendering: optimizeLegibility;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5; }
+
+header {
+  height: 76px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 2px 40px 0px; }
+  header .name {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 23px 0;
+    float: left; }
+    header .name a {
+      text-decoration: none;
+      color: #333; }
+  header .nav {
+    list-style: none;
+    margin: 16px 0;
+    padding: 0;
+    float: right; }
+    header .nav li {
+      padding: 0;
+      display: inline-block; }
+      header .nav li a {
+        line-height: 1.5;
+        border-bottom: 2px solid transparent;
+        color: #bec2c9;
+        font-weight: 500;
+        letter-spacing: 0.3px;
+        padding: 10px 0px 24px;
+        margin-left: 32px;
+        text-decoration: none;
+        display: inline-block; }
+        header .nav li a.active {
+          border-bottom: 2px solid black;
+          color: #333;
+          font-weight: 600; }
+
+.main-container {
+  margin: 0 auto; }
+  @media (max-width: 1200px) {
+    .main-container {
+      padding: 0 50px; } }
+
+.container {
+  max-width: 1120px;
+  margin: 0 -1rem;
+  box-sizing: border-box; }
+  @media (min-width: 960px) {
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      padding: 0; } }
+
+body {
+  margin: 0;
+  font-family: "Source Sans Pro";
+  text-align: center; }
+  body h1 {
+    font-size: 32px;
+    margin: 32px 0 16px 0;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: -0.5px; }
+  body h2 {
+    line-height: 32px;
+    font-weight: 400;
+    margin-top: 32px;
+    margin-top: 0;
+    font-size: 20px;
+    color: #8b939b; }
+  body h1, body h2 {
+    margin-bottom: 15px;
+    text-align: left; }
+  body .underline {
+    background: #dde2e7;
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 32px 0 48px; }
+  body div {
+    display: inline-block; }
+
+.highlight {
+  width: 5px;
+  height: 5px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #E06A3C;
+  margin-top: 20px; }
+
+.heading-sub {
+  color: #8b939b; }
+
+hr {
+  border: none;
+  height: 2px;
+  background: #dde2e7; }
+
+.row {
+  box-sizing: border-box;
+  margin: 0 -1rem; }
+  .row .row-content {
+    display: block; }
+    .row .row-content .content {
+      padding: 10px; }
+    .row .row-content .right {
+      vertical-align: top; }
+      .row .row-content .right .bottom {
+        display: block; }
+        .row .row-content .right .bottom .info {
+          margin: 10px 0 0 15px;
+          height: 240px;
+          width: 315px; }
+        .row .row-content .right .bottom > .info {
+          text-align: left;
+          vertical-align: top;
+          margin-left: 0; }
+    .row .row-content .box {
+      background: white;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+      border-radius: 2px; }
+      .row .row-content .box .data {
+        width: 147px;
+        text-align: center; }
+        .row .row-content .box .data .stat {
+          font-size: 28px;
+          display: block;
+          font-weight: 600; }
+      .row .row-content .box .heading {
+        font-weight: 600;
+        font-size: 18px;
+        display: inline-block; }
+
+#globe {
+  margin-right: 10px;
+  margin-bottom: 30px; }
+  #globe .clickable {
+    fill: 'darkgrey'; }
+  #globe .hover {
+    fill: 'grey'; }
+  #globe .clicked {
+    fill: "red"; }
+  #globe .clickhover {
+    fill: "darkred"; }
+  #globe .stroke {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1px; }
+  #globe .fill {
+    fill: azure; }
+  #globe .land {
+    fill: #abc9cf; }
+  #globe .boundary {
+    fill: none;
+    stroke: #fff;
+    stroke-width: .5px; }
+
+.line-chart {
+  height: 250px;
+  width: 640px;
+  vertical-align: top; }
+  .line-chart .line {
+    fill: none;
+    stroke: #00d3d3;
+    stroke-width: 2; }
+  .line-chart .dot {
+    fill: #1100ff;
+    stroke: black; }
+
+text.label {
+  font-size: 12px;
+  fill: #8b939b;
+  font-weight: bold; }
+
+text.emission {
+  font-size: 28px;
+  fill: #E06A3C;
+  font-weight: 400; }
+
+footer {
+  height: 70px;
+  padding: 90px 0 0; }
+  footer .left {
+    font-size: 16px;
+    color: #bec2c9;
+    padding-left: 10px; }

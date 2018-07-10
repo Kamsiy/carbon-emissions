@@ -1,0 +1,79 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="name left">
+                <a href="/about">Kamsi Ibeziako</a>
+            </div>
+            <ul class="right nav">
+                <li> <a href="/" class="active">Projects</a></li>
+                <li><a href="/about" class="">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="main-container"style="margin-top: 100px;">
+
+        <h1>World CO<sub>2</sub> Emissions</h1>
+        <h2>Visualization of the worlds CO2 emission</h2>
+        <span class="underline"></span>
+        <div class="row">
+            <div class="row-content">
+                <div id="globe" class="box"></div>
+                <div class="right">
+                    <div class="line-chart box" >
+                        <div class="content">
+                            <div style = "width: 100%; height: 30px"> 
+                                
+                                <span class="heading" id="name" style = "float: left;">United States</span>
+                                <div class="tooltip" style = "float: right;">
+                                    <span class="highlight"></span>
+                                    <span class="yearly-emissions"></span>
+                                    <span class="tooltip-year"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom"> 
+                        <div class="info box" style = "margin-right: 5px;">
+                            <div class="content"><span class="heading">Region</span></div>
+                            
+                        </div>
+                        <div class="info box" style = "margin-left: 5px;">
+                            <div class="content">
+                                <span class="heading">Carbon Emission (2014)</span>
+                                <div class="donut" style="margin-top: 11px"></div>
+                                <hr>
+                                <div class="data" style="border-right: 2px solid #dde2e7">
+                                    <span class="highlight"></span>
+                                    <div class="right" >
+                                        <span class="growth stat">2%</span>
+                                        <span class="heading-sub">Annual Growth</span>
+                                    </div>
+                                </div>
+                                <div class="data">
+                                    <span class="highlight"></span>
+                                    <div class="right">
+                                        <span class="ccpi stat"></span>
+                                        <span class="heading-sub">CCPI ranking</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span class="left sub">Kamsi Ibeziako &copy; 2018</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
+    <script type='text/javascript' src='js/d3.js'></script>
+    <script type='text/javascript' src='js/topojson.js'></script>
+    <script src="js/graph.js"></script>
+    <script type='text/javascript' src='js/globe.js'></script>
+</body>
